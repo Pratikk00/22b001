@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+      function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            const myobj = JSON.parse(this.responseText);
+            var output = "";
+            output += "<table border='1'>";
+            output += "<tr><td>Emp_no</td><td>Emp_name</td><td>salary</td><td>designation</td></tr>";
+            for(let i in myobj){
+              output += "<tr><td>"+myobj[i].book_no+"</td><td>"+myobj[i].book_name+"</td><td>"+myobj[i].salary+"</td><td>"+myobj[i].designation+"</td></tr>";
+            }
+            output += "</table>";
+            document.getElementById('d1').innerHTML = output;
+          }
+        };
+        xhttp.open('GET', 'emp.json');
+        xhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <h2>books details</h2>
+	
+    <div id="d1">
+      
+    </div>
+    <button type="button" onclick="loadDoc()">Read More</button><br />
+  </body>
+</html>

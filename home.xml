@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+  <book>
+    <title>HARRY POTTER</title>
+	<author>john smith</author>
+	<isbn>978-1-234567-89-0</isbn>
+	<publisher>publishco</publisher>
+	<price>$49.99</price>
+   </book>
+   
+   <book>
+    <title>HARRY POTTER PART 2</title>
+	<author>john smith</author>
+	<isbn>978-1-234567-89-0</isbn>
+	<publisher>publishco</publisher>
+	<price>$50.99</price>
+   </book>
+   
+   <book>
+    <title>TOKON</title>
+	<author>alice johnson</author>
+	<isbn>978-1-234567-89-0</isbn>
+	<publisher>techpress</publisher>
+	<price>$60.99</price>
+   </book>
+</bookstore>
